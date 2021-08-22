@@ -1,5 +1,5 @@
 import {getRandomValueFromList} from "./random.js";
-import {titanfall2Options} from "./titanfall-two-values.js";
+import {allValues as titanfall2Options} from "./titanfall-two-values.js";
 
 
 const valueMap = {};
