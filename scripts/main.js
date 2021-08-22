@@ -1,21 +1,29 @@
 import {getRandomValueFromList} from "./random.js";
-import {allValues as titanfall2Options} from "./titanfall-two-values.js";
+import {
+    PRIMARY_WEAPONS,
+    ANTI_TITAN_WEAPONS,
+    PISTOLS,
+    ORDNANCES,
+    TACTICALS,
+    KIT1,
+    KIT2,
+    BOOSTS,
+    TITANS,
+    ALL_VALUES
+} from "./titanfall-two-values.js";
 
 
 const valueMap = {};
 
 function randomizeAll() {
-    const randomValues = titanfall2Options.map(function(optionSet) {
-        return {
-            categoryLabel: optionSet.singularLabel,
-            categoryName: optionSet.name,
-            value: getRandomValueFromList(optionSet.values).name
-        };
-    });
-
-    for(const val of randomValues) {
-        valueMap[val.categoryName] = val.value;
+    for(const category of ALL_VALUES) {
+        getRandomValueFromCategory(category);
     }
+}
+
+function getRandomValueFromCategory(category) {
+    valueMap[category.name] = getRandomValueFromList(category.values).name;
+    return valueMap[category.name];
 }
 
 function updateUi() {

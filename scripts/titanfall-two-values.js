@@ -2,7 +2,7 @@
  * Options taken from in-game. Typed out by hand
  */
 
-const PRIMARY_WEAPONS = {
+export const PRIMARY_WEAPONS = {
 	name: "primaryWeapons",
 	label: "Primary Weapons",
 	singularLabel: "Primary Weapon",
@@ -102,7 +102,7 @@ const PRIMARY_WEAPONS = {
 	],
 };
 
-const ANTI_TITAN_WEAPONS = {
+export const ANTI_TITAN_WEAPONS = {
 	name: "antiTitanWeapons",
 	label: "Anti Titan Weapons",
 	singularLabel: "Anti Titan Weapon",
@@ -114,14 +114,14 @@ const ANTI_TITAN_WEAPONS = {
 	],
 };
 
-const PISTOLS = {
+export const PISTOLS = {
 	name: "pistols",
 	label: "Pistols",
 	singularLabel: "Pistol",
 	values: [{ name: "RE-45" }, { name: "P2016" }, { name: "Wingman" }],
 };
 
-const ORDNANCES = {
+export const ORDNANCES = {
 	name: "ordnances",
 	label: "Ordnances",
 	singularLabel: "Ordnance",
@@ -135,7 +135,7 @@ const ORDNANCES = {
 	],
 };
 
-const TACTICALS = {
+export const TACTICALS = {
 	name: "tacticals",
 	label: "Tacticals",
 	singularLabel: "Tactical",
@@ -150,7 +150,7 @@ const TACTICALS = {
 	],
 };
 
-const KIT1 = {
+export const KIT1 = {
 	name: "kit1",
 	label: "Kit 1",
 	singularLabel: "Kit 1",
@@ -162,7 +162,7 @@ const KIT1 = {
 	],
 };
 
-const KIT2 = {
+export const KIT2 = {
 	name: "kit2",
 	label: "Kit 2",
 	singularLabel: "Kit 2",
@@ -175,7 +175,7 @@ const KIT2 = {
 	],
 };
 
-const BOOSTS = {
+export const BOOSTS = {
 	name: "boosts",
 	label: "Boosts",
 	singularLabel: "Boost",
@@ -195,7 +195,7 @@ const BOOSTS = {
 	],
 };
 
-const TITANS = {
+export const TITANS = {
 	name: "titans",
 	label: "Titans",
 	singularLabel: "Titan",
@@ -210,7 +210,7 @@ const TITANS = {
 	],
 };
 
-export const allValues = [
+export const ALL_VALUES = [
 	PRIMARY_WEAPONS,
 	ANTI_TITAN_WEAPONS,
 	PISTOLS,
