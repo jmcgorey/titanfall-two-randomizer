@@ -1,4 +1,49 @@
+:root {
+    --border: 4px solid black;
+    --text-color: #EEEEEE;
+    --background-color: #535353;
+
+    --spacing-medium: 1em;
+    --spacing-small: .75em;
+    --spacing-x-small: 0.5em;
+
+    --accent-color: #f78012;
+}
+
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color)
+}
+
+.card {
+    padding: var(--spacing-medium);
+    border: var(--border);
+    margin: var(--spacing-x-small);
+}
+
+.card-header {
+    display: flex;
+}
+
+.card-header .title {
+    flex: 1;
+    min-width: 0;
+}
+
+.card-header .actions {
+    flex: none;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    font-weight: 800;
+    border-color: var(--accent-color);
+    padding: var(--spacing-small);
+    box-shadow: white;
 }

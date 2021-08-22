@@ -11,53 +11,122 @@
 <body>
     <script src="scripts/main.js" type="module"></script>
     <h1>Titanfall 2 Loadout Randomizer</h1>
-    <div class="box">
+    <button data-category="all" id="rerollAllBtn" type="button">Reroll All</button>
         <!-- Tactical -->
-        <h2>Tactical</h2>
-        <p id="tactical"></p>
-        <button data-category="tacticals" id="rerollTacticalBtn" type="button">Reroll</button>
+        <article class="card">
+            <div class="card-header">
+                <div class="title">
+                    <h2>Tactical</h2>
+                </div>
+                <div class="actions">
+                    <button data-category="tacticals" id="rerollTacticalBtn" type="button">Reroll</button>
+                </div>
+            </div>
+            <p id="tactical"></p>
+        </article>
         
         <!-- Ordnance-->
-        <h2>Ordnance</h2>
-        <p id="ordnance"></p>
-        <button data-category="ordnances" id="rerollOrdnanceBtn" type="button">Reroll</button>
+        <article class="card">
+            <div class="card-header">
+                <div class="title">
+                    <h2>Ordnance</h2>
+                </div>
+                <div class="actions">
+                    <button data-category="ordnances" id="rerollOrdnanceBtn" type="button">Reroll</button>
+                </div>
+            </div>
+            <p id="ordnance"></p>
+        </article>
 
         <!-- Primary Weapon -->
-        <h2>Primary Weapon</h2>
-        <p id="primaryWeapon"></p>
-        <button data-category="primaryWeapons" id="rerollPrimaryWeaponBtn" type="button">Reroll</button>
+        <article class="card">
+            <div class="card-header">
+                <div class="title">
+                    <h2>Primary Weapon</h2>
+                </div>
+                <div class="actions">
+                    <button data-category="primaryWeapons" id="rerollPrimaryWeaponBtn" type="button">Reroll</button>
+                </div>
+            </div>
+            <p id="primaryWeapon"></p>
+        </article>
 
         <!-- Anti-Titan Weapon -->
-        <h2>Anti-Titan Weapon</h2>
-        <p id="antiTitanWeapon"></p>
-        <button data-category="antiTitanWeapons" id="rerollAntiTitanWeaponBtn" type="button">Reroll</button>
+        <article class="card">
+            <div class="card-header">
+                <div class="title">
+                    <h2>Anti-Titan Weapon</h2>
+                </div>
+                <div class="actions">
+                    <button data-category="antiTitanWeapons" id="rerollAntiTitanWeaponBtn" type="button">Reroll</button>
+                </div>
+            </div>
+            <p id="antiTitanWeapon"></p>
+        </article>
 
         <!-- Pistol -->
-        <h2>Pistol</h2>
-        <p id="pistol"></p>
-        <button data-category="pistols" id="rerollPistolBtn" type="button">Reroll</button>
+        <article class="card">
+            <div class="card-header">
+                <div class="title">
+                    <h2>Pistol</h2>
+                </div>
+                <div class="actions">
+                    <button data-category="pistols" id="rerollPistolBtn" type="button">Reroll</button>
+                </div>
+            </div>
+            <p id="pistol"></p>
+        </article>
 
         <!-- Kit 1 -->
-        <h2>Kit 1</h2>
-        <p id="kit1"></p>
-        <button data-category="kit1" id="rerollKit1Btn" type="button">Reroll</button>
+        <article class="card">
+            <div class="card-header">
+                <div class="title">
+                    <h2>Kit 1</h2>
+                </div>
+                <div class="actions">
+                    <button data-category="kit1" id="rerollKit1Btn" type="button">Reroll</button>
+                </div>
+            </div>
+            <p id="kit1"></p>
+        </article>
 
         <!-- Kit 2 -->
-        <h2>Kit 2</h2>
-        <p id="kit2"></p>
-        <button data-category="kit2" id="rerollKit2Btn" type="button">Reroll</button>
+        <article class="card">
+            <div class="card-header">
+                <div class="title">
+                    <h2>Kit 2</h2>
+                </div>
+                <div class="actions">
+                    <button data-category="kit2" id="rerollKit2Btn" type="button">Reroll</button>
+                </div>
+            </div>
+            <p id="kit2"></p>
+        </article>
 
         <!-- Boost -->
-        <h2>Boost</h2>
-        <p id="boost"></p>
-        <button data-category="boosts" id="rerollBoostBtn" type="button">Reroll</button>
+        <article class="card">
+            <div class="card-header">
+                <div class="title">
+                    <h2>Boost</h2>
+                </div>
+                <div class="actions">
+                    <button data-category="boosts" id="rerollBoostBtn" type="button">Reroll</button>
+                </div>
+            </div>
+            <p id="boost"></p>
+        </article>
 
         <!-- Titan -->
-        <h2>Titan</h2>
-        <p id="titan"></p>
-        <button data-category="titans" id="rerollTitanBtn" type="button">Reroll</button>
-
-    </div>
-    <button data-category="all" id="rerollAllBtn" type="button">Reroll All</button>
+        <article class="card">
+            <div class="card-header">
+                <div class="title">
+                    <h2>Titan</h2>
+                </div>
+                <div class="actions">
+                    <button data-category="titans" id="rerollTitanBtn" type="button">Reroll</button>
+                </div>
+            </div>
+            <p id="titan"></p>
+        </article>
 </body>
 </html>
