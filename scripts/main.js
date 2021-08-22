@@ -30,5 +30,16 @@ function updateUi() {
     document.getElementById('titan').innerText = valueMap[ 'titans'];
 }
 
-randomizeAll();
-updateUi();
+function handleReloadClick() {
+    randomizeAll();
+    updateUi();
+}
+
+function init() {
+    document.getElementById('reloadButton').onclick = handleReloadClick;
+
+    randomizeAll();
+    updateUi();
+}
+
+init();
